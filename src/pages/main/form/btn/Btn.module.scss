@@ -1,0 +1,49 @@
+@import './../../../../sass/abstracts/vars.scss';
+@import './../../../../sass/abstracts/mixs.scss';
+
+.label {
+  display: inline-block;
+
+  padding: 10px 25px;
+  margin-bottom: 25px;
+
+  border-radius: 5px;
+  font-family: SFProDisplay;
+  font-size: 20px;
+  @extend %border;
+
+  @include media (sm) {
+    width: 50%;
+  }
+
+  @include media (xs) {
+    width: 100%;
+  }
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 10px 25px;
+  margin-bottom: 25px;
+
+  border-radius: 5px;
+  font-family: SF Pro Display;
+  font-size: 20px;
+
+  @extend %border;
+
+
+  &[type=radio] {
+    display: none;
+  }
+
+}
+
+.active {
+  background-color: #F0F0F4;
+  font-weight: 700;
+}
+
+
+

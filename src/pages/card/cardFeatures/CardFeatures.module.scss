@@ -1,0 +1,25 @@
+.cardother{
+    display: flex;
+
+    padding-bottom: 95px;
+}
+.card{
+    margin: 50px;
+}
+
+.rating {
+    margin-top: 25px;
+    & button {
+        padding-right: 25px;
+    }
+    & label {
+        margin: 0;
+    }
+}
+
+.link {
+    margin-top: 50px;
+}
+
+
+

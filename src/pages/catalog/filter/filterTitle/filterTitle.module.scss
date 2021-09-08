@@ -1,0 +1,15 @@
+.title {
+    font-family: SFProDisplay;
+    font-size: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+}
+.active {
+    font-weight: bold;
+    color: #2F3035;
+    border-bottom: 2px solid #1C62CD;
+}
+.title:first-child {
+    margin-right: 42px;
+}

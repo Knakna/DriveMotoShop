@@ -1,0 +1,117 @@
+@import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
+
+
+.promoCard {
+  @include flex (column, center);
+
+  position: relative;
+
+  width: 265px;
+  height: 400px;
+
+  color: $primary;
+  border: 1px solid $borderColor;
+  border-radius: $br;
+  text-align: center;
+
+  transition: all .2s linear;
+
+  @include media (md) {
+    margin-top: 50px;
+  }
+
+  
+
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  }
+
+
+}
+
+.wrapPrice {
+  align-self: flex-end;
+
+  padding: 5px;
+
+  text-align: right;
+}
+
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 5px 20px;
+
+  font-family: Proxima Nova;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 2;
+
+  background-color: $accent;
+}
+
+.priceOld {
+  display: block;
+
+  position: relative;
+
+  font-family: Barlow;
+  font-size: 14px;
+  color: $lightText;
+
+  &::before {
+    content: "";
+
+    width: 60px;
+
+    position: absolute;
+    top: 8px;
+    left: 40px;
+
+    border: 0.5px solid $lightText;
+    transform: rotate(-5.33deg);
+  }
+}
+
+.ruble {
+  width: 8px;
+}
+
+.titleCard {
+  padding: 0 40px;
+
+  @extend %sfp;
+  font-size: 18px;
+
+  text-align: center;
+}
+
+.wrapValidity {
+  padding: 25px;
+
+  height: 25%;
+  width: 100%;
+
+  background: $bg;
+  border-radius: $br;
+}
+
+.validity {
+  display: block;
+
+  font-family: SFProDisplay;
+  font-size: 18px;
+  text-align: center;
+}
+
+.data {
+  font-family: Barlow;
+  font-weight: 700;
+  color: $accent;
+}

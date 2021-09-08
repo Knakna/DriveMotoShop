@@ -1,0 +1,19 @@
+.link {
+    background: inherit;
+    border: none;
+    margin-right: 35px;
+    font-size: 20px;
+    font-family: SFProDisplay;
+    font-weight: 400;
+    color: #2F3035;
+    opacity: 0.6;
+    cursor: pointer;
+    
+}
+.active {
+    opacity: 1;
+    border-bottom: 2px solid #1C62CD;
+    font-weight: 700;
+    
+}
+

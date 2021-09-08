@@ -1,0 +1,22 @@
+@import './../../sass/abstracts/vars.scss';
+
+.sale {
+  display: inline-block;
+
+  width: 65px;
+  height: 25px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-family: SFProDisplay;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  line-height: 2;
+
+  background-color: $accent;
+
+}

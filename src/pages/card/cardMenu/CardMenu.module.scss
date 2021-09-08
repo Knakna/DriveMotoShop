@@ -1,0 +1,19 @@
+.cardMenu {
+  width: 100%;
+  background-color: #F0F0F4;
+
+  margin-bottom: 50px;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.cardItem {
+  padding: 10px 25px;
+}

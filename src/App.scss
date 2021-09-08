@@ -1,0 +1,44 @@
+@import './sass/abstracts/vars.scss';
+@import './sass/fonts.scss';
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+button {
+  &:hover {
+    background-color: lighten($accent, 5%);
+    color:#ffffff;
+
+}
+
+&:active {
+    background-color: darken($accent, 5%);
+    color:#ffffff;
+}
+}
+
+.App {
+  font-family: SFProDisplay;
+  font-size: 10px;
+  color: $primary;
+  line-height: 1.2;
+
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  max-width: 1200px;
+  // width: 100%;
+}
+
+

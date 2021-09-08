@@ -1,0 +1,89 @@
+@import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
+
+.products {
+  @include flex(column, flex-start);
+
+  text-align: left;
+
+  @include media (xxl) {
+    align-items: center;
+  }
+}
+
+.slider {
+  width: 100%;
+  // align-self: center;
+  // text-align: center;
+
+  @include media (xxl) {
+    width: 90%;
+  }
+
+  @include media (xxl) {
+    // width: 100%;
+    width: 900px;
+  }
+
+  @include media (md) {
+    width: 570px;
+  }
+
+  @media (max-width: 635px) {
+    width: 270px;
+  }
+
+  @media (max-width: 420px) {
+    width: 220px;
+  }
+
+}
+
+:global(.slick-prev) {
+  width: 20px;
+  height: 30px;
+  top: 50%;
+  left: -40px;
+
+  // @include media (lg) {
+  //   display: none;
+  // }
+
+}
+
+:global(.slick-next) {
+  width: 20px;
+  height: 30px;
+  top: 50%;
+  right: -40px;
+
+  // @include media (lg) {
+  //   display: none;
+  // }
+
+}
+
+:global(.slick-list) {
+  padding: 15px;
+  margin: -15px;
+
+
+  @media (max-width: 420px) {
+    padding: 0 10px;
+    margin: 0px -35px;
+  }
+
+}
+
+:global(.slick-dots) {
+  margin: -15px 0;
+
+  @media (max-width: 420px) {
+   width: 110%;
+}
+}
+
+:global(.slick-slider) {
+  margin: 0 auto;
+
+}

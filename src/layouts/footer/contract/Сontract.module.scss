@@ -1,0 +1,16 @@
+@import '../../../sass/abstracts/vars';
+@import '../../../sass/abstracts/mixs';
+
+.contract__list{
+    display: flex;
+    justify-content: center;
+}
+.contract__link{
+    color: $primary;
+}
+.contract__item{
+    margin: 0 0 20px 80px;
+    @include media(375px) {
+        margin: 0 0 20px 20px;
+    }
+}

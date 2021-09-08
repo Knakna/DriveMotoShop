@@ -1,0 +1,14 @@
+@import "../../sass/abstracts/vars";
+@import "../../sass/abstracts/mixs";
+
+.footer{
+    background: #f0f0f4;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    @include media(850px) {
+        flex-wrap: wrap;
+        justify-content: space-around;    }
+}
+

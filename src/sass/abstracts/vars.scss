@@ -1,0 +1,46 @@
+$accent: #1C62CD;
+$bg: #F0F0F4;
+$br: 3px;
+$borderColor: #CDCDCD;
+
+$lightText: #C4C4C4;
+$primary:  #2F3035;
+$primary-opacity: rgba($primary,.7);
+
+// $sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
+
+
+
+$breakpoints: (
+    xs: 574.8px,
+    sm: 766.8px,
+    md: 990.8px,
+    lg: 1023.8px,
+    xl: 1199.8px,
+    xxl: 1280px
+);
+
+// @mixin media($width, $type:max) {
+//     @if map_has_key($breakpoints, $width) {
+//         $width: map_get($breakpoints, $width);
+//         @if $type == min {
+//             $width: $width + 1px;
+//         }
+//     }
+//     @media (#{$type}-width: $width) {
+//         @content;
+//     }
+// }
+
+
+// @mixin media($width, $type:min) {
+//     @if map_has_key($breakpoints, $width) {
+//         $width: map_get($breakpoints, $width);
+//         @if $type == max {
+//             $width: $width - 1px;
+//         }
+//     }
+//     @media (#{$type}-width: $width) {
+//         @content;
+//     }
+// }

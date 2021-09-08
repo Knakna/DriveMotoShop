@@ -1,0 +1,106 @@
+@import './../../../sass/abstracts/mixs.scss';
+@import './../../../sass/abstracts/vars.scss';
+
+.burger {
+  display: none;
+
+  position: fixed;
+  top: 50px;
+
+  width: 60px;
+  height: 35px;
+
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: all .2s linear;
+  z-index: 25;
+
+
+  @include media (md) {
+    display: block;
+
+    // width: 40px;
+    // height: 30px;
+
+    // left: 20px;
+    // top: 16px;
+  }
+
+  @include media (xs) {
+    width: 40px;
+    height: 30px;
+
+    left: 20px;
+    top: 16px;
+  }
+
+  &:hover {
+    background: transparent;
+
+    & .burgerLine,
+    & .burgerLine::after,
+    & .burgerLine::before,
+    & .burgerLine.active::before,
+    & .burgerLine.active::after {
+        background-color: $accent;
+        transition: .2s;
+    }
+  }
+
+
+
+
+
+
+}
+
+.burgerLine {
+  @extend %burgerLine;
+
+  &::before {
+    @extend %burgerLine;
+
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  &::after {
+    @extend %burgerLine;
+
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  &.active {
+    display: block;
+    position: relative;
+
+    padding: 0;
+
+    height: 0;
+
+    border: 0;
+    transition: all .2s linear;
+    z-index: 25;
+
+    &::after {
+      @extend %burgerCross;
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      @extend %burgerCross;
+      transform: rotate(45deg);
+    }
+
+
+  }
+}

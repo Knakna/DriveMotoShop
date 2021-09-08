@@ -1,0 +1,135 @@
+@import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
+
+.banner {
+  @include flex();
+
+  position: relative;
+
+  padding: 25px 120px 30px 70px;
+  margin-bottom: 75px;
+
+  background: $accent;
+
+  @include media (xl) {
+    flex-direction: column;
+
+    min-height: 180px;
+
+    padding: 25px;
+  }
+
+
+}
+
+.img {
+  @include media (sm) {
+    transform: scaleX(.9)
+  }
+}
+
+.utv {
+  transform: rotateY(180deg);
+
+  @include media (xl) {
+    position: absolute;
+    right: 20px;
+    top: 80px
+  }
+
+  @include media (sm) {
+    transform: scale(.8, .7);
+  }
+
+  @include media (xs) {
+    display: none;
+  }
+}
+
+
+.atv {
+  @include media (xl) {
+    position: absolute;
+    left: 20px;
+    top: 80px
+  }
+
+  @include media (sm) {
+    transform: scale(.8, .8) rotateY(180deg);
+  }
+
+  @include media (xs) {
+    display: none;
+  }
+
+}
+
+.title {
+  padding-left: 20px;
+
+  max-width: 305px;
+
+  @extend %sfp;
+  font-size: 36px;
+  line-height: 1;
+  color: #FFFFFF;
+
+  @include media (xl) {
+    max-width: unset;
+
+    padding-bottom: 20px;
+    padding-left: 0;
+
+    text-align: center;
+    font-size: clamp(16px, 4vw, 36px);
+  }
+
+  @include media (xs) {
+    text-align: center;
+    font-size: 24px;
+  }
+
+
+
+}
+
+.btn {
+  width: 285px;
+  height: 55px;
+
+  font-family: SFProDisplay;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 2;
+  color: $primary;
+  text-transform: uppercase;
+
+  background-color: #FFFFFF;
+  @extend %border;
+
+  transition: all .2s linear;
+
+  @include media (xl) {
+    font-size: clamp(16px, 4vw, 24px);
+  }
+
+  @include media (sm) {
+    padding: 0 10px;
+    width: 100%;
+    min-height: 55px;
+
+    font-size: clamp(16px, 2vw, 24px);
+  }
+
+  &:hover {
+    box-shadow: 3px 5px 20px rgba(28, 28, 28, 0.25);
+    background-color: #ffffff;
+    color: $accent;
+  }
+
+  &:active {
+    background-color: #a5c1eb;
+  }
+
+
+}

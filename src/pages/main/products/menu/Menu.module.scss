@@ -1,0 +1,15 @@
+@import './../../../../sass/abstracts/vars.scss';
+@import './../../../../sass/abstracts/mixs.scss';
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 25px 0 35px;
+
+    @include media (lg) {
+        margin: 25px auto 35px;
+      }
+}

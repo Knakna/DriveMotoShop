@@ -1,0 +1,26 @@
+@import './../../../../../sass/abstracts/vars.scss';
+@import './../../../../../sass/abstracts/mixs.scss';
+
+.link {
+  margin-right: 50px;
+  padding-bottom: 10px;
+
+  font-family: SFProDisplay;
+  font-size: 15px;
+  text-transform: unset;
+  text-align: center;
+  color: $primary;
+  border-bottom: 2px solid transparent;
+
+  transition: all .2s linear;
+
+  @include media (sm) {
+    margin: 0 10px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $accent;
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+  }
+
+}

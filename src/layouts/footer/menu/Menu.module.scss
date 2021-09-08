@@ -1,0 +1,16 @@
+@import '../../../sass/abstracts/vars';
+@import '../../../sass/abstracts/mixs';
+
+.menu{
+  font-size: 14px;
+  margin: 40px 0 0 100px;
+  @include media(850px) {
+    margin: 40px 0 0 0;
+  }
+  }
+.menu__item{
+  padding-top: 5px;
+}
+.menu__link{
+  color: $primary;
+}

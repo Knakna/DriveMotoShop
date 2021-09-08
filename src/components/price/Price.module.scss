@@ -1,0 +1,14 @@
+@import './../../sass/abstracts/vars.scss';
+
+
+.price {
+    font-family: Barlow;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: $primary;
+
+    // &:hover {
+    //     color: $accent;
+    // }
+}

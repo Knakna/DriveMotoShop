@@ -1,0 +1,118 @@
+@import './../../sass/abstracts/vars.scss';
+@import './../../sass/abstracts/mixs.scss';
+
+.card {
+  @include flex(column);
+
+  position: relative;
+
+  padding: 20px;
+
+  width: 270px;
+  min-height: 400px;
+
+  border: 1px solid #CDCDCD;
+  border-radius: $br;
+  text-align: center;
+
+  transition: all .2s linear;
+
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
+    & .look {
+      opacity: .9;
+    }
+
+    & .title {
+      color: $accent;
+    }
+
+    & .price {
+      color: $accent;
+    }
+
+    & .priceNone {
+      color: $accent;
+    }
+
+    & .report {
+      color: $accent;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-family: SFProDisplay;
+  font-size: 18px;
+  color: $primary;
+}
+
+
+.price {
+  font-family: Barlow;
+  font-weight: 700;
+  font-size: 30px;
+  color: $primary;
+}
+
+.priceNone {
+  @extend %sfp;
+  font-size: 18px;
+  color: $primary;
+}
+
+.report {
+  font-family: SFProDisplay;
+  font-size: 16px;
+  color: $accent;
+  text-decoration: underline;
+
+  border: none;
+  background-color: transparent;
+}
+
+.look {
+  padding: 20px;
+
+  width: 230px;
+  height: 61px;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 20px;
+  color: $primary;
+
+  background: #FFFFFF;
+  opacity: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: $br;
+
+  @extend %border;
+  transition: all .5s linear;
+}
+
+.btn {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  width: 60px;
+  height: 40px;
+
+  background: $accent;
+  border-radius: 10px 0px 0px 0px;
+  @extend %border;
+}
+
+// .catalog {
+//   margin: 0;
+// }

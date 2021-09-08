@@ -1,0 +1,30 @@
+@import './../../../sass/abstracts/mixs.scss';
+@import './../../../sass/abstracts/vars.scss';
+
+.menu {
+  background-color: #F0F0F4;
+
+  @include media (md) {
+    display: none;
+
+}
+}
+
+.list {
+  @include flex();
+
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  margin: 10px 20px 0 0;
+
+  &+& {
+    margin-left: 20px;
+  }
+
+  &+& {
+    margin-right: 0;
+  }
+}

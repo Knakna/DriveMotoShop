@@ -1,0 +1,20 @@
+@import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
+
+.catalog {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  grid-template-columns: repeat(3, 370px);
+
+  margin-bottom: 80px;
+
+  @include media(xl) {
+    grid-template-columns: repeat(auto-fill, 370px);
+  }
+
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
+}

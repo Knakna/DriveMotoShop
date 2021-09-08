@@ -1,0 +1,131 @@
+@mixin flex($flex-direction: row, $align-items: center, $justifyContent: space-between) {
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justifyContent;
+}
+
+//   @include flex(column);
+//   @include flex();
+//   @include flex(center, flex-start);
+
+
+%border {
+    border: none;
+    cursor: pointer;
+}
+
+// @extend %border;
+
+
+%sfp {
+    font-family: SFProDisplay, sans-serif;
+    font-weight: 700;
+}
+
+// @extend %sfp;
+
+%burgerLine {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    border-radius: 1px;
+    background-color: black;
+    border: 0;
+
+    // transition: all .5s linear;
+    z-index: 6;
+}
+
+// @extend %burgerLine;
+
+
+%burgerCross {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50px;
+    height: 3px;
+
+    border-radius: 1px;
+    background-color: black;
+
+    z-index: 6;
+    opacity: 1;
+
+    // transition: all .5s linear;
+}
+
+// @extend %burgerCross;
+
+
+
+
+@mixin media($width, $type:max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == min {
+            $width: $width + 1px;
+        }
+    }
+    @media (#{$type}-width: $width) {
+        @content;
+    }
+}
+
+// @include media (sm) {}
+
+// @media (max-width: 630px) {
+  //   width: 240px;
+  // }
+
+
+
+
+
+
+
+
+// %hover {
+//     &:hover {
+//       background-color: lighten(#1C62CD, 10%);
+
+//   }
+
+//   &:active {
+//       background-color: darken(#1C62CD, 10%);
+//   }
+//   }
+
+// @extend %hover;
+
+
+
+//   @include font(21px, 1.2, false,center)
+//   @mixin font (value,value1,value2,value4:left){
+//     font-size: $value;
+//     line-height: $value2;
+//     font-weight: $value3;
+//     text-align: $value4;
+//   }
+
+//   @mixin asdf ($value1,$value2,$value3) {
+
+//     @font-face {
+//       font-family: $value1;
+//       font-display: swap;
+//       src:
+//       url('../assets/fonts/Barlow/#{value2}.woff') format('woff'),
+//       url('../assets/fonts/Barlow/#{value2}.woff2') format('woff2');
+//       font-weight: $value3;
+//     }
+
+//   }
+
+//   @include asdf(barlow,barlow-bold,700)

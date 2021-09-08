@@ -1,0 +1,36 @@
+@import './../../../../sass/abstracts/vars.scss';
+
+.form {
+  display: flex;
+
+  margin: 0 0 10px 40px;
+}
+
+.shop {
+  width: 50%;
+}
+
+.label {
+  margin-right: 20px;
+
+  font-family: SFProDisplay;
+  font-size: 17px;
+  color: $primary-opacity;
+}
+
+.input {
+  width: 313px;
+  height: 33px;
+
+  padding-left: 20px;
+
+  background: $bg url(./../../../../assets/icons/Search.svg) no-repeat 95%;
+  border-radius: $br;
+  border: none;
+
+  &:focus {
+    caret-color: $lightText;
+    outline: 1px solid $lightText;
+  }
+}
+

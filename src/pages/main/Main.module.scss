@@ -1,0 +1,81 @@
+@import './../../sass/abstracts/vars.scss';
+@import './../../sass/abstracts/mixs.scss';
+
+.main {
+  padding: 95px 0;
+
+  text-align: left;
+
+  @include media (md) {
+    padding-top: 50px;
+
+  }
+}
+
+.promo {
+  @include flex();
+  // display: grid;
+  // gap: 25px;
+  // grid-template-columns: 74% 1fr;
+
+  padding-bottom: 85px;
+
+  @include media (md) {
+    flex-direction: column;
+    padding-bottom: 55px;
+  }
+
+}
+
+.promoWrap {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  @media (max-width: 620px) {
+    justify-content: center;
+  }
+}
+
+
+
+
+.promoMob {
+  display: none;
+
+  @include media (md) {
+    display: block;
+  }
+
+  @media (max-width: 620px) {
+    display: none;
+  }
+}
+
+
+.showBtn {
+  display: block;
+
+  padding: 15px 45px;
+  margin: 35px auto 85px;
+
+  width: 250px;
+  height: 50px;
+
+  font-family: SFProDisplay;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $primary;
+
+  background: $bg;
+  @extend %border;
+
+  transition: all .2s linear;
+
+  @include media (xxl) {
+    margin: 55px auto;
+
+  }
+}

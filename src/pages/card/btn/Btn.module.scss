@@ -1,0 +1,18 @@
+@import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
+
+.btn {
+  width: 140px;
+  height: 35px;
+
+  font-family: SFProDisplay;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background: $accent;
+  border-radius: $br;
+  @extend %border;
+}
+

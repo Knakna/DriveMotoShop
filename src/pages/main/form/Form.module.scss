@@ -1,0 +1,61 @@
+@import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
+
+.form {
+  position: relative;
+
+  padding-bottom: 85px;
+}
+
+.radioBtns {
+  @include media (sm) {
+    @include flex(column, flex-start);
+  }
+}
+
+.wrapInput {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+
+  padding: 15px 20px;
+
+  background: $bg;
+  border-radius: $br;
+  border: none;
+
+  &::placeholder {
+    font-family: SFProDisplay;
+    font-size: 16px;
+    color: #656464;
+  }
+
+  &:focus::placeholder {
+    transform: translateX(-90%);
+    transition: all 5s linear;
+  }
+}
+
+.searchBtn {
+  position: absolute;
+
+  height: 100%;
+  width: 145px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: SFProDisplay;
+  letter-spacing: 0.2em;
+
+  background: $accent;
+  border-radius: $br;
+  @extend %border;
+
+  transform: translateX(-100%);
+
+  @include media (xs) {
+    width: 100px;
+  }
+}

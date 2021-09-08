@@ -1,0 +1,50 @@
+@import './../../../sass/abstracts/mixs.scss';
+
+.mobile {
+  display: none;
+
+  padding: 55px 10px 10px 125px;
+
+  min-height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 20;
+
+  background: #ffffff;
+
+  transform: translateX(-100%);
+  transition: all .5s linear;
+}
+
+.active {
+  display: block;
+  transform: translateX(0);
+  transition: all .5s linear;
+
+}
+
+.item {
+  position: relative;
+  padding-bottom: 25px;
+
+  font-size: 20px;
+}
+
+.itemAdress {
+  @extend %sfp;
+  font-size: 20px;
+}
+
+.img {
+  position: absolute;
+  left: -45px;
+  top: 7px;
+
+  width: 30px;
+  height: 25px;
+}

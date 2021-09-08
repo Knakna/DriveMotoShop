@@ -1,0 +1,92 @@
+@import './../../../../sass/abstracts/mixs.scss';
+@import './../../../../sass/abstracts/vars.scss';
+
+
+.card {
+  display: flex;
+
+  width: 370px;
+  height: 130px;
+
+  padding: 10px 20px;
+
+  color: $primary;
+  background: #FFFFFF;
+  border: 1px solid $borderColor;
+  border-radius: $br;
+
+  transition: all .2s linear;
+
+  @media (max-width: 420px) {
+    width: 100%;
+    height: 130px;
+
+    padding: 10px;
+  }
+
+  &:hover {
+    color: $accent;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  }
+}
+
+.wrapContent {
+  @include flex(column, flex-start);
+  margin-right: 40px;
+
+
+  @media (max-width: 420px) {
+    margin-right: 20px;
+
+
+  }
+}
+
+
+.caption {
+  margin-top: 15px;
+
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+
+  @media (max-width: 420px) {
+    font-size: 16px;
+  }
+}
+
+
+
+.more {
+  font-family: SFProDisplay;
+  font-size: 14px;
+  color: $lightText;
+
+  cursor: pointer;
+
+  @media (max-width: 420px) {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+  }
+}
+
+.wrapImg {
+  margin: 0 auto;
+
+
+  @media (max-width: 420px) {
+    align-self: flex-end;
+
+  }
+}
+
+.img {
+  padding-bottom: 5px;
+
+  @media (max-width: 420px) {
+    width: 90%;
+
+  }
+
+}
