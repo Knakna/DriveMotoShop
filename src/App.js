@@ -45,7 +45,6 @@ function App() {
             </div>
           </Route>
 
-
           <Route path="*">
             <NoMatch />
           </Route>
