@@ -1,4 +1,4 @@
-import {
+ import {
   BrowserRouter as Router,
   Route,
   Switch
@@ -27,7 +27,7 @@ function App() {
 
         <Switch>
 
-          <Route exact path='/'>
+          <Route exact path='/driveMotoShop'>
             <div className="container">
               <Main />
             </div>
